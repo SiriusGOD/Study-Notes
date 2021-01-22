@@ -1,4 +1,7 @@
 # LibreNMS 安裝
+
+[![hackmd-github-sync-badge](https://hackmd.io/rAaqtv17QZa15dkFEFfIhg/badge)](https://hackmd.io/rAaqtv17QZa15dkFEFfIhg)
+
 ###### tags: `LibreNMS` `開源網路裝置服務監控系統`
 ## 安裝方式
 官網文件庫有非常詳細的使用說明，也提供了預先建置好的虛擬機器檔案可以直接下載開機使用，不過本次仍然以 Ubuntu 18.04 做為範例，提供安裝程序：
