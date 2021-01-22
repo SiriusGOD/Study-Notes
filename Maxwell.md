@@ -1,4 +1,7 @@
 # **Maxwell 安裝步驟 (MySQL / MariaDB CDC)**
+
+[![hackmd-github-sync-badge](https://hackmd.io/plZGACyhS1CHkYKCiyL7dw/badge)](https://hackmd.io/plZGACyhS1CHkYKCiyL7dw)
+
 ###### tags: `data stream` `CDC`
 ### 1.下載Maxwell
 ```
