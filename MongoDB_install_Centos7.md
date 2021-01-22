@@ -1,4 +1,7 @@
 # Centos7 安裝MongoDB
+
+[![hackmd-github-sync-badge](https://hackmd.io/bsLqXiiURt6zXLR78jCXwg/badge)](https://hackmd.io/bsLqXiiURt6zXLR78jCXwg)
+
 ###### tags: `DB` `NoSQL`
 ### 1. 建立檔案
 在 /etc/yum.repos.d/mongodb-org-4.4.repo 建立檔案
