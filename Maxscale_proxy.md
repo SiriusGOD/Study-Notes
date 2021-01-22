@@ -1,4 +1,7 @@
 # MaxScale 讀寫分離教學
+
+[![hackmd-github-sync-badge](https://hackmd.io/8HyTLPkkRa6ZegfrvEyP8w/badge)](https://hackmd.io/8HyTLPkkRa6ZegfrvEyP8w)
+
 ###### tags: `proxy` `DB` `MariaDB` 
 ## 1. 環境準備
 ```
