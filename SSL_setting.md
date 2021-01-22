@@ -1,4 +1,7 @@
 # **SSL憑證購買與安裝流程**
+
+[![hackmd-github-sync-badge](https://hackmd.io/MdrBYrtKSleQf1GnksRwUQ/badge)](https://hackmd.io/MdrBYrtKSleQf1GnksRwUQ)
+
 ###### tags: `web`
 ### 分為兩種情況
 ### 情況一 :  已經有買過憑證(憑證過期)
