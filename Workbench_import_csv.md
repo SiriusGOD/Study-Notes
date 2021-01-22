@@ -1,4 +1,7 @@
 # 利用MySQL WorkBench匯入csv資料
+
+[![hackmd-github-sync-badge](https://hackmd.io/lBXvvN2STAGtCjNXqSKrFg/badge)](https://hackmd.io/lBXvvN2STAGtCjNXqSKrFg)
+
 ###### tags: `DB`
 ### 方法一
 1、開啟MySQL WorkBench，新建一個Schema，如圖所示
