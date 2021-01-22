@@ -1,4 +1,7 @@
 # Kafka 安裝步驟
+
+[![hackmd-github-sync-badge](https://hackmd.io/8V9VcBJCQw2MNusaYjDERQ/badge)](https://hackmd.io/8V9VcBJCQw2MNusaYjDERQ)
+
 ###### tags: `data stream`
 ## 1.Kafka需要Java JDK8以上，所以要先安裝Java
 ```
