@@ -4,6 +4,9 @@
 
 ###### tags: `data stream` `CDC`
 ### 1.下載Maxwell
+請依各自需求下載對應版本。
+
+網址: https://github.com/zendesk/maxwell
 ```
 curl -sLo - https://github.com/zendesk/maxwell/releases/download/v1.26.2/maxwell-1.26.2.tar.gz \
        | tar zxvf -
