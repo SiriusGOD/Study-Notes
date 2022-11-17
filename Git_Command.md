@@ -1,5 +1,9 @@
 # Git Command
 
+[![hackmd-github-sync-badge](https://hackmd.io/Kg-jJl3TT0ydxIAUW7BEoA/badge)](https://hackmd.io/Kg-jJl3TT0ydxIAUW7BEoA)
+
+###### tags: `Git`
+
 1. 查詢git版本
 ```
 git --version
