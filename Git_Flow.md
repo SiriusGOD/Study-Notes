@@ -1,4 +1,9 @@
 # Git Flow
+
+[![hackmd-github-sync-badge](https://hackmd.io/rgei9x1fTcWWZo1YsAZpMw/badge)](https://hackmd.io/rgei9x1fTcWWZo1YsAZpMw)
+
+###### tags: `Git`
+
 是最早出現的一套流程，且廣泛被應用。
 Git flow 提出不同的分支功能，分別有 master、develop 、hotfix、release、feature 五種分支。
 而這五個分支，根據他們的性質，又有其他稱法：
