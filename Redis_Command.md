@@ -1,6 +1,9 @@
 # Redis Command
 
-###### tags: Redis
+[![hackmd-github-sync-badge](https://hackmd.io/7IBar0-ZT6Ohuhu0pxm4eQ/badge)](https://hackmd.io/7IBar0-ZT6Ohuhu0pxm4eQ)
+
+###### tags: `Redis`
+
 1. 進入redis cli
 ```
 redis-cli
