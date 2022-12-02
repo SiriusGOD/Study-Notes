@@ -1,4 +1,7 @@
 # MongoDB 基本指令操作
+
+[![hackmd-github-sync-badge](https://hackmd.io/voDdxQGCRVOm7dfRA-VQNQ/badge)](https://hackmd.io/voDdxQGCRVOm7dfRA-VQNQ)
+
 ###### tags: `DB` `NoSQL`
 ### MongoDB Docker基本安裝
 下載鏡像
@@ -439,10 +442,14 @@ testdb> db.rooms.findOne()
 ```
 **MongoDB 與RDBMS Where 語句比較**
 MongoDB中條件操作符有：
-* (>) 大於- $gt
-* (<) 小於- $lt
-* (>=) 大於等於- $gte
-* (<= ) 小於等於- $lte
+* (=) 等於 - $eq
+* (!=) 不等於 - $ne
+* (>) 大於 - $gt
+* (<) 小於 - $lt
+* (>=) 大於等於 - $gte
+* (<=) 小於等於 - $lte
+* (in) 存在某值 - $in
+* (not in) 不存在某值 - $nin
 
 如果你熟悉常規的SQL 數據，通過下表可以更好的理解MongoDB 的條件語句查詢：
 
@@ -514,4 +521,17 @@ testdb> db.rooms.find({'rating':{$gt:4.3},$or:[{'name':'單人房'},{'price':110
     rating: 4.4
   }
 ]
+```
+查詢小總結
+```
+## 一般搜尋
+- db.集合名稱(collections name).find()
+- 尋找對應屬性：db.collections.find({屬性名稱:屬性值})
+- 模糊搜尋：db.rooms.find({"name":/雙/})
+- 數值區間：db.collections.find({屬性名稱:{$lte:400}})
+- 複合條件：db.collections.find({屬性名稱:{$lte:400},rating:{$gte:4.8}})
+
+## 常用語法
+- project 保護欄位：db.rooms.find({"name":/雙/},{"_id":0})
+- 搜尋陣列裡面的值：db.rooms.find({"payment":{$in:["信用卡"]}})
 ```
