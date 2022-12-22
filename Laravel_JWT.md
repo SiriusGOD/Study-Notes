@@ -1,4 +1,7 @@
 # Laravel9 實作API JWT 機制
+
+[![hackmd-github-sync-badge](https://hackmd.io/sfgVzCfGTzukHtnthP7pWg/badge)](https://hackmd.io/sfgVzCfGTzukHtnthP7pWg)
+
 ###### tags: `Laravel` `PHP` `JWT`
 ## 安裝
 ### 安裝jwt-auth
