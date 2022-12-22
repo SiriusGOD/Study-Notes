@@ -1,4 +1,7 @@
 # Laravel9 實作Jetstream 與 API Token
+
+[![hackmd-github-sync-badge](https://hackmd.io/6UkNQjOtSGGWy4HDcXK4zg/badge)](https://hackmd.io/6UkNQjOtSGGWy4HDcXK4zg)
+
 ###### tags: `Laravel` `PHP`
 ## 安裝
 ### 安裝Jetstream
