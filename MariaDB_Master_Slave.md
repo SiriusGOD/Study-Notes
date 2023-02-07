@@ -378,3 +378,7 @@ MariaDB [MasterA]> SELECT * FROM test;
 +------+
 1 row in set (0.00 sec)
 ```
+
+## 6. 進階
+當上述的master slave 架構都成功後可以參考下一篇Maxscale的教學，嘗試實作DB的負載平衡
+網址:https://hackmd.io/@WL-WTIRiRlOr-R2wORqerA/SJP8CjU1O
