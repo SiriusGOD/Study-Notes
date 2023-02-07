@@ -1,4 +1,17 @@
 # PM2 指令
+
+[![hackmd-github-sync-badge](https://hackmd.io/ISk4TEI0TU25UT30xPtkeQ/badge)](https://hackmd.io/ISk4TEI0TU25UT30xPtkeQ)
+###### tags: `PM2`
+
+## PM2介紹
+pm2 是一個管理 Node.js process 的工具，它可以讓我們用簡單的指令啟動 Node.js cluster 並最大化使用我們的 CPU，可以利用它來簡化很多node應用管理的繁瑣任務，如性能監控、自動重啟、負載均衡等，而且使用非常簡單。
+
+## 安裝
+使用npm安裝 
+```
+npm install pm2 -g
+```
+
 ## 指令
 1. 查看当前启动的所有应用
 ```
@@ -19,6 +32,10 @@ pm2 stop {app_name}
 5. 停止並刪除服務
 ```
 pm2 delete {app_name}
+```
+6. 列出目前所有已啟動的process並顯示他們目前的狀態, 按下ctrl+c 可以離開monitor
+```
+pm2 monit
 ```
 ## 指令可附加參數
 * 指定 app 一個名字
@@ -86,3 +103,6 @@ pm2 delete {app_name}
 --basic-auth-username 
 --basic-auth-password
 ```
+
+參考網站：
+https://ithelp.ithome.com.tw/articles/10214173
