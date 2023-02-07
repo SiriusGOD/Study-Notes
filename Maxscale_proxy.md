@@ -3,7 +3,20 @@
 [![hackmd-github-sync-badge](https://hackmd.io/8HyTLPkkRa6ZegfrvEyP8w/badge)](https://hackmd.io/8HyTLPkkRa6ZegfrvEyP8w)
 
 ###### tags: `proxy` `DB` `MariaDB` 
-## 1. 環境準備
+## 1. 前言
+建議在實作Maxscale前先學習Docker與MariaDB的Master Slave
+
+Docker文章:
+
+https://hackmd.io/@WL-WTIRiRlOr-R2wORqerA/ByiJz_6RD
+
+https://hackmd.io/@WL-WTIRiRlOr-R2wORqerA/rJYqiz7Li
+
+Master Slave文章:
+
+https://hackmd.io/@WL-WTIRiRlOr-R2wORqerA/SkB0B9VT8
+
+## 2. 環境準備
 ```
 system version: CentOS 7
 mariadb version: 10.2
@@ -14,7 +27,7 @@ mariadb slave2: 172.17.0.6 (143底下的docker)
 maxscale proxy: 192.168.1.143
 ```
 
-## 2.創建 MariaDB Master 的 Docker 自訂my.cnf文件
+## 3.創建 MariaDB Master 的 Docker 自訂my.cnf文件
 ```
 docker run -d -P --name Mxs_Master -v /home/my/mx_master:/etc/mysql/conf.d -e MYSQL_ROOT_PASSWORD=29057419 -d mariadb:10.2
 ```
@@ -28,13 +41,13 @@ log-bin=mariadb-bin
 server_id=200
 binlog_format=row
 ```
-## 3.創建2台 MariaDB Slave 的 Docker
+## 4.創建2台 MariaDB Slave 的 Docker
 ```
 docker run -d -P --name Mxs_Slave_01 -e MYSQL_ROOT_PASSWORD=29057419 mariadb:10.2
 docker run -d -P --name Mxs_Slave_02 -e MYSQL_ROOT_PASSWORD=29057419 mariadb:10.2
 ```
 
-## 4.Docker 運行結果
+## 5.Docker 運行結果
 ```
 docker ps -a
 
@@ -46,7 +59,7 @@ docker ps -a
 會出現如下圖所示:
 ![](https://i.imgur.com/snGC0GZ.png)
 
-## 5.查詢Master BinLog的日誌偏移量
+## 6.查詢Master BinLog的日誌偏移量
 ```
 # 進入docker
 doceker exec -it Mxs_Master bash
@@ -66,7 +79,7 @@ mariadb [(none)]> show master status;
 +--------------------+----------+--------------+------------------+
 ```
 
-## 6.配置2台Slave 
+## 7.配置2台Slave 
 ```
 # 進入docker
 doceker exec -it Mxs_Slave_01 bash
@@ -147,7 +160,7 @@ slave_Non_Transactional_Groups: 0
 ```
 這時理論上mastser與slave已經建立好連線。
 
-## 7. 安裝MaxScale
+## 8. 安裝MaxScale
 ```
 wget https://dlm.mariadb.com/1495309/MaxScale/2.5.6/packages/rhel/7/maxscale-2.5.6-1.rhel.7.x86_64.rpm
 yum -y install maxscale-2.5.6-1.rhel.7.x86_64.rpm
