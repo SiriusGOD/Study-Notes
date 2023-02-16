@@ -1,5 +1,8 @@
 # CodiMD(HackMD)使用Docker安裝教學
 
+[![hackmd-github-sync-badge](https://hackmd.io/Y3TV4sABT3eZzGz92EoJpg/badge)](https://hackmd.io/Y3TV4sABT3eZzGz92EoJpg)
+
+
 ###### tags: `Docker` `HackMD` `CodiMD` `Nginx` 
 網路上的即時文件協作中，除了 Google Documents 系列外，HackMD 也走出了一條自己的路。它採用 Markdown 語法，用起來非常的順手。CodiMD是其開源的版本。
 
